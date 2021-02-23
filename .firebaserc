@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-app-cc8cc": {
+      "hosting": {
+        "angulartest": [
+          "my-app-cc8cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-app-cc8cc"
+  }
+}

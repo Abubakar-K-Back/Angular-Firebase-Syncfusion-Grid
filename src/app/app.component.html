@@ -1,0 +1,20 @@
+<div class="control-section">
+  <ejs-grid #grid id='Grid' [editSettings]="editSettings"  (dataSourceChanged)='dataSourceChanged($event)'
+  (dataStateChange)= 'dataStateChange($event)' [toolbar]='toolbar' [dataSource]='toDoList' [allowExcelExport]='true'
+  (toolbarClick)='toolbarClick($event)' [allowPdfExport]='true' height='350px'>
+    <e-columns>
+      <e-column field='FirstName' headerText='First Name' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='LastName' headerText='Last Name' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='Email' headerText='Email' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='Phone' headerText='Phone Number' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='Order' headerText='Order Details' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='OrderTotal' editType= 'numericedit' [edit]='numericParams' headerText='Order total' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='ShippingMethod' headerText='Shipping Method' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='Address' headerText='Delivery Address' width='170' [validationRules]='TextRules' ></e-column>
+      <e-column field='OrderDate' headerText='Order Date' editType= 'datepickeredit'  width='170'  [validationRules]='DateRules' format= 'dmy'></e-column>
+      <e-column field='Notes' headerText='Notes' width='170' ></e-column>
+    </e-columns>
+  </ejs-grid>
+</div>
+
+
